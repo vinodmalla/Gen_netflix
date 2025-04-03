@@ -5,10 +5,9 @@ export const API_OPTIONS = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNDk5Y2ZkZjgxNWZiMzY5YTM5YzQ3ZmZjMGQwMTA5ZiIsIm5iZiI6MTc0MTcwODQ0NC43NTgwMDAxLCJzdWIiOiI2N2QwNWM5Y2Q0Zjc0MTM3MzI2MDZhYTYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.tILvm64eQ9j3SpD0sJCEYBBmwfmEvhlxMS41bX8tlGA'
+      Authorization: 'Bearer '+process.env.REACT_APP_TMDB_KEY,
     }
   };
 export const IMG_URL='https://image.tmdb.org/t/p/w500';
 export const Supported_languages=[{identifier:"eng",name:"English"},{identifier:"hin",name:"Hindi"},{identifier:"tel",name:"Telugu"}]
-export const VITE_GENAI_API_KEY="AIzaSyDFXzBgi-nm575MIWf3E0f0lrG2FdsJ7Ac"
-export const OPENAI_KEY="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"
+export const VITE_GENAI_API_KEY=process.env.REACT_APP_GENAI_KEY;
